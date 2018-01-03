@@ -15,15 +15,26 @@
 
   <link rel="Stylesheet" type="text/css" href="style.css" />
 
+  <script type="text/javascript">
+function setHeight(fieldId){
+    document.getElementById(fieldId).style.height = document.getElementById(fieldId).scrollHeight+'px';
+}
+setHeight('textBox1');
+</script>
+
 </head>
 
-<body >
+<body>
+
+<textarea id="textBox1" name="content" TextMode="MultiLine" onkeyup="setHeight('textBox1');" onkeydown="setHeight('textBox1');">Hello World</textarea>
 
   <div id="textH2">Kalkulator treningowy .JS --- by HoMar ---</div>
 
-<textarea id="viewResult"></textarea>
-<textarea id="test"></textarea>
-<textarea id="viewToDoAction"></textarea>
+  <textarea id="viewResult"></textarea>
+  <textarea id="test"></textarea>
+  <textarea id="viewToDoAction"></textarea>
+  <textarea id="viewToDoAction1"></textarea>
+  <textarea id="viewToDoAction2"></textarea>
   <button id="button1" value="1" onClick="pressNumber(1)">1</button>
   <button id="button2" value="2" onClick="pressNumber(2)">2</button>
   <button id="button3" value="3" onClick="pressNumber(3)">3</button>
@@ -34,12 +45,12 @@
   <button id="button8" value="8" onClick="pressNumber(8)">8</button>
   <button id="button9" value="9" onClick="pressNumber(9)">9</button>
   <button id="button0" value="0" onClick="pressNumber(0)">0</button>
-    <button id="buttonEqual" onClick="equal()">=</button>
-    <button id="buttonPlus" value="+" onClick="plus()">+</button>
-    <button id="buttonMinus">-</button>
-    <button id="buttonMultiplication">*</button>
-<button id="buttonDivision">/</button>
-  <button id="buttonClear">C</button>
+  <button id="buttonEqual" onClick="equal()">=</button>
+  <button id="buttonPlus" value="+" onClick="action(1)">+</button>
+  <button id="buttonMinus" onClick="action(2)">-</button>
+  <button id="buttonMultiplication" onClick="action(3)">*</button>
+  <button id="buttonDivision" onClick="action(4)">/</button>
+  <button id="buttonClear" onClick="clearr()">C</button>
 
 
 </body>
