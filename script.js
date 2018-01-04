@@ -13,6 +13,7 @@ if (document.getElementById("viewToDoAction1").value === "")
 {
 dataTable[number] = number;
 document.getElementById("viewToDoAction").innerHTML += dataTable[number] ;
+document.getElementById("textBox1").innerHTML += dataTable[number] ;
 
 numberTable[1] = Number(document.getElementById("viewToDoAction").value);
 }

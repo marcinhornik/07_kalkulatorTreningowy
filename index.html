@@ -16,35 +16,57 @@
   <link rel="Stylesheet" type="text/css" href="style.css" />
 
   <script type="text/javascript">
-function setHeight(fieldId){
-    document.getElementById(fieldId).style.height = document.getElementById(fieldId).scrollHeight+'px';
+let zwieksz = 0;
+let zwieksz1 = 0;
+function setWeight(){
+
+
+  for (let x = 0; x < 8; x++) {
+    ++zwieksz;
+  }
+
+
+  if (document.getElementById("viewToDoAction1").value === ""){
+
+    document.getElementById("viewToDoAction").style.width = 10+zwieksz+'px';
+
+ document.getElementById("viewToDoAction1").style.left = 30+zwieksz+'px';
+ document.getElementById("viewToDoAction2").style.left = 70+zwieksz+'px';
+
+
+  }
+
+
+if (document.getElementById("viewToDoAction1").value > ""){
+  document.getElementById("viewToDoAction2").style.width = document.getElementById("viewToDoAction2").scrollWidth+4+'px';
 }
-setHeight('textBox1');
+}
+// setHeight('textBox1');
 </script>
 
 </head>
 
 <body>
 
-<textarea id="textBox1" name="content" TextMode="MultiLine" onkeyup="setHeight('textBox1');" onkeydown="setHeight('textBox1');">Hello World</textarea>
+<textarea id="textBox1" ></textarea>
 
   <div id="textH2">Kalkulator treningowy .JS --- by HoMar ---</div>
 
   <textarea id="viewResult"></textarea>
-  <textarea id="test"></textarea>
+
   <textarea id="viewToDoAction"></textarea>
   <textarea id="viewToDoAction1"></textarea>
   <textarea id="viewToDoAction2"></textarea>
-  <button id="button1" value="1" onClick="pressNumber(1)">1</button>
-  <button id="button2" value="2" onClick="pressNumber(2)">2</button>
-  <button id="button3" value="3" onClick="pressNumber(3)">3</button>
-  <button id="button4" value="4" onClick="pressNumber(4)">4</button>
-  <button id="button5" value="5" onClick="pressNumber(5)">5</button>
-  <button id="button6" value="6" onClick="pressNumber(6)">6</button>
-  <button id="button7" value="7" onClick="pressNumber(7)">7</button>
-  <button id="button8" value="8" onClick="pressNumber(8)">8</button>
-  <button id="button9" value="9" onClick="pressNumber(9)">9</button>
-  <button id="button0" value="0" onClick="pressNumber(0)">0</button>
+  <button id="button1" value="1" onClick="pressNumber(1), setWeight()">1</button>
+  <button id="button2" value="2" onClick="pressNumber(2), setWeight()">2</button>
+  <button id="button3" value="3" onClick="pressNumber(3), setWeight()">3</button>
+  <button id="button4" value="4" onClick="pressNumber(4), setWeight()">4</button>
+  <button id="button5" value="5" onClick="pressNumber(5), setWeight()">5</button>
+  <button id="button6" value="6" onClick="pressNumber(6), setWeight()">6</button>
+  <button id="button7" value="7" onClick="pressNumber(7), setWeight()">7</button>
+  <button id="button8" value="8" onClick="pressNumber(8), setWeight()">8</button>
+  <button id="button9" value="9" onClick="pressNumber(9), setWeight()">9</button>
+  <button id="button0" value="0" onClick="pressNumber(0), setWeight()">0</button>
   <button id="buttonEqual" onClick="equal()">=</button>
   <button id="buttonPlus" value="+" onClick="action(1)">+</button>
   <button id="buttonMinus" onClick="action(2)">-</button>
