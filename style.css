@@ -19,84 +19,114 @@ body {
   position: absolute;
   top: 100px;
   left: 10px;
-  /*width: 40px;
-  height: 40px;*/
+  width: 25px;
+  height: 25px;
 }
 
 #button2 {
   position: absolute;
   top: 100px;
   left: 40px;
+  width: 25px;
+  height: 25px;
 }
 
 #button3 {
   position: absolute;
   top: 100px;
   left: 70px;
+  width: 25px;
+  height: 25px;
 }
 
 #button4 {
   position: absolute;
   top: 130px;
   left: 10px;
+  width: 25px;
+  height: 25px;
 }
 
 #button5 {
   position: absolute;
   top: 130px;
   left: 40px;
+  width: 25px;
+  height: 25px;
 }
 
 #button6 {
   position: absolute;
   top: 130px;
   left: 70px;
+  width: 25px;
+  height: 25px;
 }
 
 #button7 {
   position: absolute;
   top: 160px;
   left: 10px;
+  width: 25px;
+  height: 25px;
 }
 
 #button8 {
   position: absolute;
   top: 160px;
   left: 40px;
+  width: 25px;
+  height: 25px;
 }
 
 #button9 {
   position: absolute;
   top: 160px;
   left: 70px;
+  width: 25px;
+  height: 25px;
 }
 
 #button0 {
   position: absolute;
   top: 190px;
   left: 10px;
-  width: 83px;
-  /*height: 10px;*/
+  width: 53px;
+height: 25px;
 
 }
 
+
+#buttonx {
+  position: absolute;
+  top: 190px;
+  left: 70px;
+  width: 25px;
+  height: 25px;
+
+}
 #buttonEqual {
   position: absolute;
   top: 160px;
   left: 100px;
-  height: 50px;
+  width: 25px;
+  height: 55px;
 }
 
 #buttonPlus {
   position: absolute;
   top: 130px;
   left: 100px;
+  width: 25px;
+  height: 25px;
 }
 
 #buttonMinus {
   position: absolute;
   top: 100px;
   left: 100px;
+  width: 25px;
+  height: 25px;
 }
 
 
@@ -105,18 +135,23 @@ body {
   position: absolute;
   top: 130px;
   left: 130px;
+  width: 25px;
+  height: 25px;
 }
 
 #buttonDivision {
   position: absolute;
   top: 100px;
   left: 130px;
+  width: 25px;
+  height: 25px;
 }
 #buttonClear {
   position: absolute;
   top: 160px;
   left: 130px;
-  height: 50px;
+  height: 55px;
+  width: 25px;
 }
 
 
@@ -136,9 +171,10 @@ body {
 
 #viewToDoAction {
   position: absolute;
-  border: 1px solid black;
+  border: 0px solid black;
+background-color: lightgray;
   top: 70px;
-  /*left: 5px;*/
+  /* left: 5px; */
   z-index: 1;
   font-size: 12px;
   font-weight: normal;
@@ -149,7 +185,8 @@ body {
 
 #viewToDoAction1 {
   position: absolute;
-  border: 1px solid black;
+  border: 0px solid black;
+  background-color: lightgray;
   top: 70px;
   /*left: 25px;*/
   z-index: 1;
@@ -162,9 +199,111 @@ body {
 
 #viewToDoAction2 {
   position: absolute;
-  border: 1px solid black;
+  border: 0px solid black;
+  background-color: lightgray;
   top: 70px;
   /*left: 150px;*/
+  z-index: 1;
+  font-size: 12px;
+  font-weight: normal;
+  color: black;
+  width: 10px;
+  height: 20px;
+}
+
+#viewToDoAction3 {
+  position: absolute;
+  border: 1px solid black;
+  top: 70px;
+  /*left: 25px;*/
+  z-index: 1;
+  font-size: 12px;
+  font-weight: normal;
+  color: black;
+  width: 10px;
+  height: 20px;
+}
+
+#viewToDoAction4 {
+  position: absolute;
+  border: 1px solid black;
+  top: 70px;
+  /*left: 25px;*/
+  z-index: 1;
+  font-size: 12px;
+  font-weight: normal;
+  color: black;
+  width: 10px;
+  height: 20px;
+}
+
+#viewToDoAction5 {
+  position: absolute;
+  border: 1px solid black;
+  top: 70px;
+  /*left: 25px;*/
+  z-index: 1;
+  font-size: 12px;
+  font-weight: normal;
+  color: black;
+  width: 10px;
+  height: 20px;
+}
+#viewToDoAction6 {
+  position: absolute;
+  border: 1px solid black;
+  top: 70px;
+  /*left: 25px;*/
+  z-index: 1;
+  font-size: 12px;
+  font-weight: normal;
+  color: black;
+  width: 10px;
+  height: 20px;
+}
+
+#viewToDoAction7 {
+  position: absolute;
+  border: 1px solid black;
+  top: 70px;
+  /*left: 25px;*/
+  z-index: 1;
+  font-size: 12px;
+  font-weight: normal;
+  color: black;
+  width: 10px;
+  height: 20px;
+}
+
+#viewToDoAction8 {
+  position: absolute;
+  border: 1px solid black;
+  top: 70px;
+  /*left: 25px;*/
+  z-index: 1;
+  font-size: 12px;
+  font-weight: normal;
+  color: black;
+  width: 10px;
+  height: 20px;
+}
+#viewToDoAction9 {
+  position: absolute;
+  border: 1px solid black;
+  top: 70px;
+  /*left: 25px;*/
+  z-index: 1;
+  font-size: 12px;
+  font-weight: normal;
+  color: black;
+  width: 10px;
+  height: 20px;
+}
+#viewToDoAction10 {
+  position: absolute;
+  border: 1px solid black;
+  top: 70px;
+  /*left: 25px;*/
   z-index: 1;
   font-size: 12px;
   font-weight: normal;
