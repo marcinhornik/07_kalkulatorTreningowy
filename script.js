@@ -102,8 +102,22 @@ let actionNo = [0,"+","-","*","/"];
 
 numberTable[2] = actionNo[action];
 
+if (document.getElementById("viewToDoAction").value >""){
+document.getElementById("viewToDoAction1").value = actionNo[action];
+}
 
-document.getElementById("viewToDoAction1").value += actionNo[action]
+if (document.getElementById("viewToDoAction2").value >""){
+document.getElementById("viewToDoAction3").value = actionNo[action];
+}
+if (document.getElementById("viewToDoAction4").value >""){
+document.getElementById("viewToDoAction5").value = actionNo[action];
+}
+if (document.getElementById("viewToDoAction6").value >""){
+document.getElementById("viewToDoAction7").value = actionNo[action];
+}
+if (document.getElementById("viewToDoAction8").value >""){
+document.getElementById("viewToDoAction9").value = actionNo[action];
+}
 
 }
 
@@ -127,6 +141,12 @@ console.log("clear");
 
 let zwieksz = 0;
 let zwieksz1 = 0;
+let zwieksz2 = 0;
+let zwieksz3 = 0;
+let zwieksz4 = 0;
+let zwieksz5 = 0;
+let zwieksz6 = 0;
+let zwieksz7 = 0;
 function setWeight(){
 
 
@@ -277,6 +297,36 @@ if (document.getElementById("viewToDoAction1").value > ""){
   viewToDoAction3Possition =document.getElementById('viewToDoAction3').offsetLeft;
 
   document.getElementById("viewToDoAction4").style.left = viewToDoAction3Possition+viewToDoAction3Width+'px';
+  viewToDoAction4Width =document.getElementById('viewToDoAction4').offsetWidth;
+  viewToDoAction4Possition =document.getElementById('viewToDoAction4').offsetLeft;
+
+  document.getElementById("viewToDoAction5").style.left = viewToDoAction4Possition+viewToDoAction4Width+'px';
+  viewToDoAction5Width =document.getElementById('viewToDoAction5').offsetWidth;
+  viewToDoAction5Possition =document.getElementById('viewToDoAction5').offsetLeft;
+  document.getElementById("viewToDoAction6").style.left = viewToDoAction5Possition+viewToDoAction5Width+'px';
+  viewToDoAction6Width =document.getElementById('viewToDoAction6').offsetWidth;
+  viewToDoAction6Possition =document.getElementById('viewToDoAction6').offsetLeft;
+  document.getElementById("viewToDoAction7").style.left = viewToDoAction6Possition+viewToDoAction6Width+'px';
+  viewToDoAction7Width =document.getElementById('viewToDoAction7').offsetWidth;
+  viewToDoAction7Possition =document.getElementById('viewToDoAction7').offsetLeft;
+  document.getElementById("viewToDoAction8").style.left = viewToDoAction7Possition+viewToDoAction7Width+'px';
+  viewToDoAction8Width =document.getElementById('viewToDoAction8').offsetWidth;
+  viewToDoAction8Possition =document.getElementById('viewToDoAction8').offsetLeft;
+  document.getElementById("viewToDoAction9").style.left = viewToDoAction8Possition+viewToDoAction8Width+'px';
+  viewToDoAction9Width =document.getElementById('viewToDoAction9').offsetWidth;
+  viewToDoAction9Possition =document.getElementById('viewToDoAction9').offsetLeft;
+  document.getElementById("viewToDoAction10").style.left = viewToDoAction9Possition+viewToDoAction9Width+'px';
+}
+
+if (document.getElementById("viewToDoAction3").value > ""){
+  // funkcja zmieniajaca style pola tekstowego uwzgledniajac wprowadzone dane
+
+    for (let x = 0; x < 7; x++) {   //licznik zwiekszajacy wartośc zmiennej zwieksz o 8 // za kazdum wejsciem w funkcje dodaje 8 do zmiennej
+      ++zwieksz2;
+    }
+
+
+  document.getElementById("viewToDoAction4").style.width = zwieksz2+'px';;
   viewToDoAction4Width =document.getElementById('viewToDoAction4').offsetWidth;
   viewToDoAction4Possition =document.getElementById('viewToDoAction4').offsetLeft;
 
