@@ -77,9 +77,6 @@ numberTable[1] = Number(document.getElementById("viewToDoAction").value);
 }
 
 
-
-
-
 else {
 
     if (number == 10) {number=".";} //warunek który podstawia przecinek do liczby zmiennoprzecinkowej
@@ -125,8 +122,6 @@ document.getElementById("viewToDoAction9").value = actionNo[action];
 function equal(){
 
 if (document.getElementById("viewToDoAction1").value === "+") {document.getElementById("viewResult").value = numberTable[1]+numberTable[2];}
-
-
 else if (document.getElementById("viewToDoAction1").value === "-") {document.getElementById("viewResult").value = numberTable[1]-numberTable[2];}
 else if (document.getElementById("viewToDoAction1").value === "*") {document.getElementById("viewResult").value = numberTable[1]*numberTable[2];}
 else if (document.getElementById("viewToDoAction1").value === "/") {document.getElementById("viewResult").value = numberTable[1]/numberTable[2];}
